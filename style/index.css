@@ -1,0 +1,334 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins';
+}
+
+body{
+    background-color: #FDF0E9;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+
+/* #nav-bar{
+   display: inline;
+
+} */
+.nav-main{
+    margin: 0;
+}
+.nav-main li{
+    list-style: none;
+}
+.nav-main, a{
+    
+    flex-direction: column;
+    list-style: none;
+    padding-top:12px;
+    padding-bottom: 12px;     
+    text-align: center;
+    margin-right: 50px;
+    color: #FFFFFF;
+}
+ 
+.nav-main, ul {
+    display: inline-flex ;
+    display: flex;
+    justify-content: flex-end;
+    
+    /* justify-content: flex-start; */
+   
+}
+ .nav-main,li :hover {
+    background-color: #28293E;
+    color:#EF6D58;
+    
+} 
+.rending-page{
+    /* background */
+
+
+position: absolute;
+width: 100%;
+height: 620px;
+left: 0px;
+top: 0px;
+
+background: #28293E;
+}
+
+#Header{
+    position: absolute;
+width: 461px;
+height: 120px;
+left: 135px;
+top: 200px;
+
+/* H1 */
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 800;
+font-size: 72px;
+line-height: 80px;
+/* or 111% */
+
+letter-spacing: -2px;
+
+/* Text_Light */
+
+color: #FFFFFF;
+}
+
+#detail{
+    
+position: absolute;
+width: 470px;
+height: 66px;
+left: 139px;
+top: 380px;
+
+/* Text */
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+/* or 200% */
+
+
+/* Text_Light_Gray */
+
+color: rgba(255, 255, 255, 0.64);
+}
+
+#name{
+    
+position: absolute;
+width: 220px;
+height: 32px;
+left: 135px;
+top: 140px;
+
+/* H5 */
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+/* identical to box height, or 200% */
+
+letter-spacing: 3px;
+text-transform: uppercase;
+
+/* Text_Light_Accent */
+
+color: #EF6D58;
+}
+
+#resume{
+    /* Light/Button/Primary/Text */
+
+
+position: absolute;
+width: 154px;
+height: 48px;
+left: 135px;
+top: 460px;
+
+background: #EF6D58;
+border-radius: 6px;
+border: none;
+
+}
+
+ /* .container-main{
+ 
+position: absolute;
+width: 568.4px;
+height: 554.5px;
+left: 736.6px;
+top: 186.5px;
+}   */
+/* .container1{
+    position: absolute;
+width: 315.81px;
+height: 391.84px;
+left: 989.19px;
+top: 260.51px;
+
+} */
+.profile-image{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    left: 800px;
+    top: 200px;
+     
+
+/* background: url(/my-brand/images/lievin.jpeg); */
+
+}
+#image-id{
+    height: 8cm;
+    width: 8cm;
+    border-radius: 100%;
+}
+
+
+.service{
+    /* Service */
+
+
+position: absolute;
+width: 100px;
+height:100px;
+left: 150px;
+top: 0px;
+
+/* H5 */
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+/* identical to box height, or 200% */
+
+text-align: center;
+letter-spacing: 3px;
+text-transform: uppercase;
+
+/* Text_Dark_Accent */
+
+color: #EF6D58;
+}
+.page2{
+    position: absolute;
+width: 400px;
+height: 128px;
+left: 470px;
+top: 700px;
+}
+.page2 h4{
+    /* How I Can Help You W */
+
+
+    position: absolute;
+    width: 400px;
+    height:100px;
+    left: 0px;
+    top: 50px;
+
+/* H2 */
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 800;
+font-size: 56px;
+line-height: 64px;
+/* or 114% */
+
+text-align: center;
+letter-spacing: -1px; 
+
+/* Text_Dark */
+
+color: #391400;
+
+}
+
+.art-service{
+    position: absolute;
+    width: 930px;
+height: 230px;
+left: 150px;
+top: 900px;
+/* border-radius: 5px; */
+align-content: center;
+box-sizing:border-box;
+
+background: #FDF0E9;
+border: 1px solid #F3D1BF;
+/* border-radius: 0px 6px 6px 0px; */
+padding: 20px;
+
+
+
+}
+
+.art-service .card1{
+    position: absolute;
+    width: 476px;
+
+ left: 0px;
+ top:0px;
+ bottom: 0px;
+border: 1px solid #F3D1BF;
+align-items: center;
+align-content: center;
+
+}
+.art-service .card2{
+    position: absolute;
+    width: 476px;
+
+ left: 476px;
+ top:0px;
+ bottom: 0px;
+border: 1px solid #F3D1BF;
+
+}
+.card2{
+    background: #FDF0E9;
+border: 1px solid #F3D1BF;
+/* border-radius: 0px 6px 6px 0px; */
+}
+.art-service h4{
+    color: #391400;
+    padding-top: 30px;
+    align-content: center;
+    
+}
+.art-service button{
+    color:#FDF0E9;
+    background-color: #EF6D58;
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 6px;
+    align-content: center;
+}
+
+.page3{
+    position: absolute;
+    width: 800px;
+height: 200px;
+left: 220px;
+top: 1300px;
+}
+.more{
+    position: absolute;
+    /* width: 800px;
+height: 200px; */
+text-align: center;
+left: 45%;
+top: 1170px;
+}
+.more button{
+    border: none;
+}
+
+.experience{
+    top:1200px;
+    left: 0%;
+    position: absolute;
+}
