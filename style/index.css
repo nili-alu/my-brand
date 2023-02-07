@@ -330,5 +330,32 @@ top: 1170px;
 .experience{
     top:1200px;
     left: 0%;
-    position: absolute;
+    position:relative;
+}
+.about{
+    top:1250px;
+    left: 0%;
+    position:relative;
+}
+.skills{
+    top:1300px;
+    left: 0%;
+    position:relative;
+}
+
+.blog{
+    top:1310px;
+    left: 0%;
+    position: relative;
+}
+.contact-me{
+    top:1280px;
+    left: 0%;
+    position:relative;
+}
+
+.footer{
+    top:1400px;
+    left: 0%;
+    position:relative;
 }

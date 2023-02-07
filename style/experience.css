@@ -9,16 +9,18 @@
 }
 
 body{
-    background-color: #FDF0E9;
+    background: #28293E;
     background-position: center;
     background-size: cover;
+    margin-bottom: 10%;
    
 }
 
 .experience{
     position: absolute;
+    top: 10%;
     width: 100%;
-    height: 800px;
+    height: 600px;
     background: #28293E;
     box-sizing:border-box;
 
@@ -30,6 +32,7 @@ align-content: center;
 
 
 position: absolute;
+
 width: 104px;
 height: 32px;
 left: 135px;
@@ -96,6 +99,11 @@ text-transform: uppercase;
 color: #FFFFFF;
 background: #28293E;
 }
+.experience button:hover{
+    opacity: 0.8;
+    background-color: #EF6D58;
+
+}
 .experience .card3{
     /* Rectangle */
 
@@ -103,7 +111,7 @@ background: #28293E;
 
     position: absolute;
     width: 33%;
-    height: 70%;
+    height: 60%;
     left: 66.6%;
     top: 20%;
     
@@ -113,7 +121,7 @@ background: #28293E;
 .experience img{
     
     width: 95%;
-    height: 96%;
+    height: 95%;
     margin: 2.5%;
 
 }
@@ -126,7 +134,7 @@ box-sizing: border-box;
 
 position: absolute;
 width: 33.4%;
-height: 70%;
+height: 60%;
 left: 33.3%;
 top: 20%;
 
@@ -141,7 +149,7 @@ box-sizing: border-box;
 
 position: absolute;
 width: 33.3%;
-height: 70%;
+height: 60%;
 left: 0.1%;
 top: 20%;
 

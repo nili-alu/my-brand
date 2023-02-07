@@ -1,0 +1,112 @@
+body{
+    width: 100%;
+    margin: auto;
+}
+.contact{
+position: absolute;
+    background: #28293E;
+    width: 100%;
+    height: 800px;
+}
+.contact article{
+    float: left;
+    width: 40%;
+    height: 56%;
+    margin-top: 12%;
+}
+
+.form-part{    
+   
+    border-radius: 6px;
+    background-color: white;
+    margin: 8%;
+    width: 70%;
+    height: 55%;
+    padding-left: 40px;
+          
+   }
+   .form-part .fm{
+   text-align:left;    
+    padding-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #F3D1BF;
+    width: 90%;
+
+   }
+.contact-part p{
+    font-family: 'Epilogue';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+
+color:white;
+}
+
+.contact-part h5{
+    font-family: 'Epilogue';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+/* identical to box height, or 200% */
+
+letter-spacing: 3px;
+text-transform: uppercase;
+
+/* Text_Light_Accent */
+
+color: #EF6D58;
+}
+.contact-part h2{
+    /* H2 */
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 800;
+font-size: 56px;
+line-height: 24px;
+/* identical to box height, or 114% */
+
+letter-spacing: -1px;
+
+/* Text_Light */
+
+color: #FFFFFF;
+
+}
+
+.contact-part i{
+    position: absolute;
+    background-color: #EF6D58;
+    padding: 7px;
+    border-radius: 100%;
+    text-align: center;
+    
+}
+
+.form-part #submit-b{
+    position: absolute;
+    background-color: #EF6D58;
+    left: 37.7%;
+    width: 10%;    
+
+    text-align:center;    
+    padding: 15px;
+    border-radius: 6px;
+    border:none;
+    
+    
+   
+  
+    font-family: 'Epilogue';
+font-style: normal;
+font-weight: 900;
+font-size: 14px;
+line-height: 14px;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
