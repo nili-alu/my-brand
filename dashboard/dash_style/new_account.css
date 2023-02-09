@@ -1,22 +1,9 @@
 
-body {
-    background: #FDF0E9;
-}
-
-.login-sessection {
-    width: 100%;
-    /* height: 1006px; */
-
-}
-
-
 .container1 {
     position: absolute;
-    width: 60%;
-    height: 90%;
-    left: 20%;
-    right: 20%;
-    top: 10%;
+    width: 40%;
+    height: 506px;
+    left:40%;
 
     box-sizing: border-box;
     background: #FFFFFF;
@@ -28,16 +15,15 @@ body {
 
 .container1 .login-footer {
     position: absolute;
-    width: 88%;
-    height: 14%;
-    left: 6%;
-    right: 6%;
+    width: 80%;
+    height: 10%;
+    left: 10%;
     top: 80%
 }
 
 input[type=text],
 input[type=password] {
-    width: 80%;
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -92,12 +78,12 @@ span.psw {
 .google h4 {
     text-align: center;
 
-  
+    width: 100%;
     box-sizing: border-box;
     border: none;
     color: black;
     border-radius: 15px;
-   
+    width: 565px;
     padding: 11px 0px;
     background-color: rgba(236, 114, 95, 0.87);
 
@@ -116,7 +102,7 @@ span.psw {
 
 
 /* Change styles for span and cancel button on extra small screens */
-@media all and (max-width: 909px) {
+@media screen and (max-width: 300px) {
     span.psw {
         display: block;
         float: none;
@@ -124,13 +110,7 @@ span.psw {
 
     .cancelbtn :hover {
         width: 100%;
+       
 
-    }
-
-    .container1{
-        width: 88%;
-        left:6%;
-        right:6%;
-        height: 95%;
     }
 }
