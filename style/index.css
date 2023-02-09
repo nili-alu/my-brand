@@ -16,40 +16,14 @@ body{
 }
 
 
-/* #nav-bar{
-   display: inline;
-
-} */
-.nav-main{
+.nav-bar{
+    position: relative;
+    top: 1%;
+    width: 100%;
     margin: 0;
+    /* height: 40px; */
+
 }
-.nav-main li{
-    list-style: none;
-}
-.nav-main, a{
-    
-    flex-direction: column;
-    list-style: none;
-    padding-top:12px;
-    padding-bottom: 12px;     
-    text-align: center;
-    margin-right: 50px;
-    color: #FFFFFF;
-}
- 
-.nav-main, ul {
-    display: inline-flex ;
-    display: flex;
-    justify-content: flex-end;
-    
-    /* justify-content: flex-start; */
-   
-}
- .nav-main,li :hover {
-    background-color: #28293E;
-    color:#EF6D58;
-    
-} 
 .rending-page{
     /* background */
 
@@ -276,6 +250,10 @@ border: 1px solid #F3D1BF;
     margin-left: 35%;
     
 }
+
+.art-service li{
+    list-style: none;
+}
 .art-service p{
     margin-left: 10%;
     
@@ -355,7 +333,7 @@ top: 110%;
     position: absolute;
     width: 60%;
     height: 32%;
-    left: 20%;
+    left: 30%;
     top: 15%;
      
 
@@ -423,7 +401,7 @@ top: 110%;
     width: 28%;
     height: 4%;
     left: 30%;
-    top: 90%;
+    top: 85%;
 
     font-weight: 200;
     font-size: 10px;
@@ -438,7 +416,7 @@ top: 110%;
     width: 50%;
     height: 4%;
     left: 27%;
-    top: 95%;
+    top: 90%;
     
     font-weight: 800;
     font-size: 26px;
@@ -449,10 +427,12 @@ top: 110%;
     }
     .art-service{
         height: 60%;
-        top:105%;
+        top:100%;
+        left: 10%;
     }
     .art-service #learnMore{
         width: 30%;
+        
     }
 
     .art-service .card1{
@@ -460,6 +440,7 @@ top: 110%;
         width: 100%;
         height: 50%;
         top:0px;
+        
     
     }
     .art-service .card2{
@@ -469,12 +450,49 @@ top: 110%;
         top:50%;
         left:0%;
 
-    
     }
 
     .more{
         left: 15%;
     }
+
+    /* Experience section*/
+
+    .experience{
+       width: auto;
+        top:1480px;
+        
+        
+    }
+
+    .about{
+        top:1550px;
+        left: 0%;
+        position:relative;
+    }
+    .skills{
+        top:1700px;
+        left: 0%;
+        position:relative;
+    }
+    
+    .blog{
+        top:1810px;
+        left: 0%;
+        position: relative;
+    }
+    .contact-me{
+        top:1980px;
+        left: 0%;
+        position:relative;
+    }
+    
+    .footer{
+        top:2100px;
+        left: 0%;
+        position:relative;
+    }
+    
 
 
 }

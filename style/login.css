@@ -3,6 +3,16 @@ body {
     background: #FDF0E9;
 }
 
+.nav-bar{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    margin: 0;
+    left: 0;
+    /* height: 40px; */
+
+}
+
 .login-sessection {
     width: 100%;
     /* height: 1006px; */
@@ -16,7 +26,7 @@ body {
     height: 90%;
     left: 20%;
     right: 20%;
-    top: 10%;
+    top: 20%;
 
     box-sizing: border-box;
     background: #FFFFFF;
@@ -32,7 +42,7 @@ body {
     height: 14%;
     left: 6%;
     right: 6%;
-    top: 80%
+    top: 95%
 }
 
 input[type=text],
@@ -91,6 +101,7 @@ span.psw {
 
 .google h4 {
     text-align: center;
+    width: 88%;
 
   
     box-sizing: border-box;
@@ -132,5 +143,14 @@ span.psw {
         left:6%;
         right:6%;
         height: 95%;
+    }
+
+    .container1 .login-footer {
+       
+        width: 88%;
+        height: 14%;
+        left: 6%;
+        right: 6%;
+        top: 90%
     }
 }

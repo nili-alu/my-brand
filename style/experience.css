@@ -18,9 +18,9 @@ body{
 
 .experience{
     position: absolute;
-    top: 10%;
+    top: 25%;
     width: 100%;
-    /* height: 600px; */
+    height: 900px;
     height: 100%;
     background: #28293E;
     box-sizing:border-box;
@@ -102,6 +102,13 @@ background: #28293E;
     background-color: #EF6D58;
 
 }
+
+/* .experience article{
+    width: 33.3%;
+    height: 60%;
+    position: absolute;
+
+} */
 .experience .card3{
     /* Rectangle */
 
@@ -152,7 +159,77 @@ top: 20%;
 border: 1px solid #3A3C56;
 }
 
-@media all and(max-width: 909px) {
+@media (max-width: 909px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    /* .experience article{
+
+        width: 100%;
+        height: 60%;
+        margin: 3%;
+        border:1px solid #EF6D58;
+        
+
+    } */
+
+    .experience h3{
+        /* Latest Work */
+        top: 2%;
+
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 34px;
+    }
+
+    .experience button{
+ 
+    width: 35%;
+    height: 5%;
+    left: 60%;
+    top:10%;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 8px;
+    }
+  
+    
+
+    .experience .card1{
+        /* Rectangle */
+    
+    
+    box-sizing: border-box;
+    
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    left: 0%;
+    top: 20%;
+ 
+    }
+    
+.experience .card2{
+
+    width: 100%;
+    height: 40%;
+    left: 0%;
+    top: 60%;
+
+    }
+
+    .experience .card3{
+
+        width: 100%;
+        height: 40%;
+        left: 0%;
+        top: 100%;
+        
+  
+    }
     
     
 }
