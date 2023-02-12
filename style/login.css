@@ -1,21 +1,28 @@
 
 body {
     background: #FDF0E9;
+    position: static;
+    z-index: 0;
 }
 
 .nav-bar{
-    position: absolute;
-    top: 0%;
+    position: relative;
+    
     width: 100%;
     margin: 0;
-    left: 0;
-    /* height: 40px; */
+    height: 70px;
+margin-top: -5px;
+    background-color: #28293E;
+    z-index: 20;
 
 }
 
 .login-sessection {
+    position: static;
     width: 100%;
     /* height: 1006px; */
+    background: #FDF0E9;
+    z-index: 0;
 
 }
 
@@ -142,7 +149,7 @@ span.psw {
         width: 88%;
         left:6%;
         right:6%;
-        height: 95%;
+        height: 75%;
     }
 
     .container1 .login-footer {
@@ -152,5 +159,9 @@ span.psw {
         left: 6%;
         right: 6%;
         top: 90%
+    }
+    .nav-bar{
+        display: block;
+        float: none;
     }
 }

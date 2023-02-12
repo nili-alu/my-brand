@@ -12,16 +12,16 @@ body{
     background: #28293E;
     background-position: center;
     background-size: cover;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
    
 }
 
 .experience{
     position: absolute;
-    top: 25%;
+    top: 15%;
     width: 100%;
-    height: 900px;
-    height: 100%;
+    height: 700px;
+    /* height: 100%; */
     background: #28293E;
     box-sizing:border-box;
 
