@@ -11,6 +11,7 @@ body{
     background-color: #FDF0E9;
     background-position: center;
     background-size: cover;
+    /* height: 900px; */
    
 }
 
@@ -23,22 +24,24 @@ body{
 .about{
     position: absolute;
     width: 100%;
-    height: 550px;
-}
-.upperpart{
-    
-    width: 90%;
-    margin: 5%;
     height: 600px;
 }
+.upperpart{
+    position: static;
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    height: 70%;
+}
 .upperpart .image{
+    position: relative;
     width:50%;
-    height: 50%;
+    height: 45%;
     border-radius: 100%;
 
 }
 .upperpart img{
-    position: absolute;
+    position: relative;
     height: 8cm;
     width: 8cm;
     border-radius: 100%;
@@ -46,13 +49,20 @@ body{
     margin-top: 2%;
     
 }
+.aside{
+    position: static;
+    width: 50%;
+    /* border: 1px solid #EF6D58; */
+    height: 80%;
+}
 
-.upperpart .aside h5{
+ .aside h5{
     position: absolute;
     width: 40%;
-    height: 32px;
     left: 60%;
-    top:12%;
+    /* height: 32px;
+    
+    top:12%; */
     
     /* H5 */
     
@@ -76,7 +86,7 @@ body{
     
 position: absolute;
 width: 40%;
-height: 128px;
+height: 80px;
 left: 60%;
 top:19%;
 
@@ -87,32 +97,22 @@ font-style: normal;
 font-weight: 800;
 font-size: 56px;
 line-height: 64px;
-/* or 114% */
-
 letter-spacing: -1px;
-
-/* Text_Dark */
 
 color: #391400;
 }
 .upperpart h6{
     position: absolute;
 width: 277px;
-height: 32px;
+height: 12px;
 left: 60%;
 top:45%;
-
-/* Text_Big */
 
 font-family: 'Epilogue';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 32px;
-/* identical to box height, or 160% */
-
-
-/* Text_Dark */
 
 color: #391400;
 
@@ -120,7 +120,7 @@ color: #391400;
 .upperpart p{
     position: absolute;
 width: 470px;
-height: 98px;
+height: 58px;
 left: 60%;
 top: 50%;
 
@@ -133,7 +133,7 @@ line-height: 32px;
 color: rgba(57, 20, 0, 0.64);
 
 }
-.upperpart button{
+.aside button{
     /* Button */
     position: absolute;  
 width: 138px;
@@ -157,8 +157,9 @@ border-radius: 6px;
 
 .about .lowpart{
     position: absolute;
+    display: flex;
     width:80%;
-    height:25% ;
+    height:18% ;
     top:100%;
     margin-right: 10%;
     margin-left:10%;
@@ -202,7 +203,7 @@ color: #391400;
     
 }
 
-@media all and(max-width: 909px) {
+@media (max-width: 909px) {
 
     
 .about{
@@ -211,49 +212,64 @@ color: #391400;
     height: 650px;
 }
 .upperpart{
-    
+    flex-direction:column;
     width: 90%;
     margin: 5%;
     height: 600px;
-}
-.upperpart .image{
-    width:90%;
-    height: 50%;
-    border-radius: 100%;
 
 }
+
 .upperpart img{
+    /* margin-top: 10%; */
     
     height: 4cm;
     width: 4cm;
+    border-radius: 100%;
+    margin-left: 50%;
    
-    
 }
 
-.upperpart button{
-    /* Button */
-    position: absolute;  
-width: 98px;
-height: 38px;
-left:40%;
-top:75%;
+.upperpart .aside{
 
-font-weight: 900;
-font-size: 9px;
-line-height: 10px;
-background-color: #EF6D58;
+    width: 90%;
+    margin: 5%;
+    top: 10%;
+    height: 600px;
+}
+.aside button{
+
+width: 138px;
+height: 48px;
+left:20%;
+top:85%;
+}
+.upperpart h6{
+    position: absolute;
+width: 277px;
+height: 32px;
+left: 10%;
+top:55%;
+}
+.upperpart p{
+
+width: 300px;
+height: 25px;
+left: 10%;
+top:60%;
+}
+.upperpart h2{
+
+    width: 40%;
+    height: 50px;
+    left: 15%;
+    top:42%;
+    font-weight: 800;
+font-size: 36px;
+line-height: 18px;
+}
+.upperpart h5{
+    left:10%;
+    top:35%;
 
 }
-
-.about .lowpart{
-    width:80%;
-    height:25% ;
-    top:160%;
-    margin-right: 10%;
-    margin-left:10%;
-
-}
-
-
-    
 }

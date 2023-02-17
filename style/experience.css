@@ -17,10 +17,10 @@ body{
 }
 
 .experience{
-    position: absolute;
-    top: 15%;
+    /* position: absolute; */
+    /* top: 15%; */
     width: 100%;
-    height: 700px;
+    height: 800px;
     /* height: 100%; */
     background: #28293E;
     box-sizing:border-box;
@@ -165,7 +165,7 @@ border: 1px solid #3A3C56;
         float: none;
     }
 
-    /* .experience article{
+    .experience article{
 
         width: 100%;
         height: 60%;
@@ -173,7 +173,7 @@ border: 1px solid #3A3C56;
         border:1px solid #EF6D58;
         
 
-    } */
+    }
 
     .experience h3{
         /* Latest Work */

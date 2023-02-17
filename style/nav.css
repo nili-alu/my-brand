@@ -22,7 +22,8 @@ body{
   background: #28293E;
  
     overflow: hidden;
-    margin-left: 30%;
+    /* margin-left: 0%; */
+width: 100%;
     /* float: right; */
     /* margin-top: 1.5%; */
     
@@ -32,7 +33,8 @@ body{
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    display: block;
+margin-left: 30%;
+    /* display: block; */
     color: #FFFFFF;
     text-align: center;
     padding: 14px 16px;
@@ -83,6 +85,13 @@ body{
       text-align: left;
      
       /* color: #FFFFFF; */
+    }
+    .topnav {
+      background: #28293E;
+     
+        overflow: hidden;
+        /* margin-left: 0%; */
+    width: 100%;
     }
   }
   

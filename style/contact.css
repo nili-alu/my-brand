@@ -1,28 +1,33 @@
 body{
     position: relative;
-    width: 99%;
-    /* margin: auto; */
+    width: 100%;
+    margin: auto;
     background-color: #28293E;
-    z-index: 2;
+    /* z-index: 2; */
 }
 .contact{
 position: relative;
     background: #28293E;
     width: 100%;
     height: 800px;
-    top: 2%;
+    /* top: 2%; */
     z-index: 1;
     display: flex;
-    justify-content: space-between;
+    /* flex-direction: column;
+    justify-content: space-between; */
 
    
 }
 .nav-bar{
     position: relative;
+    
+    width: 100%;
+    margin: 0;
+    height: 70px;
+margin-top: -5px;
+    background-color: #28293E;
     z-index: 20;
-    height: 100px;
-    /* width: 100%;
-     height: 350px; */
+
 }
 .contact article{
     /* float: left; */
@@ -37,10 +42,9 @@ position: relative;
     border-radius: 6px;
     background-color: white;
     margin: 8%;
-    width: 70%;
     height: 55%;
     padding-left: 40px;
-          
+          /* max-width: 5px; */
    }
    .form-part .fm{
    text-align:left;    
@@ -59,7 +63,7 @@ position: relative;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 30px;
+line-height: 25px;
 
 color:white;
 }
@@ -69,7 +73,7 @@ color:white;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 32px;
+line-height: 62px;
 /* identical to box height, or 200% */
 
 letter-spacing: 3px;
@@ -86,7 +90,7 @@ font-family: 'Epilogue';
 font-style: normal;
 font-weight: 800;
 font-size: 56px;
-line-height: 24px;
+line-height: 84px;
 /* identical to box height, or 114% */
 
 letter-spacing: -1px;
@@ -95,11 +99,14 @@ color: #FFFFFF;
 }
 
 .contact-part i{
-    position: absolute;
+    /* position: absolute; */
     background-color: #EF6D58;
     padding: 7px;
     border-radius: 100%;
     text-align: center;
+    /* line-height: 30px; */
+    
+    
     
 }
 
@@ -154,7 +161,7 @@ color: #FFFFFF;
 
         font-weight: 800;
         font-size: 36px;
-        line-height: 14px;
+        line-height: 24px;
        
 
         }
@@ -163,7 +170,7 @@ color: #FFFFFF;
             font-weight: 300;
             width: 120%;
         font-size: 13px;
-        line-height: 30px;
+        line-height: 45px;
     }
 
     .form-part #submit-b{

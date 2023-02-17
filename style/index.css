@@ -17,8 +17,8 @@ body{
 
 
 .nav-bar{
-    position: relative;
-    top: 1%;
+    position: fixed;
+    /* top: 0%; */
     width: 100%;
     margin: 0;
     height: 70px;
@@ -28,8 +28,6 @@ body{
 }
 .rending-page{
     /* background */
-
-
 position: absolute;
 width: 100%;
 height: 620px;
@@ -40,21 +38,15 @@ background: #28293E;
 }
 
 .rending_container{
-    width:90%;
+    width:100%;
     height: 80%;
 }
 #Header{
     position: absolute;
-/* width: 461px;
-height: 120px; */
 width: 30%;
 height: 5%;
 left: 12%;
 top:30%;
-/* left: 135px;
-top: 200px; */
-
-/* H1 */
 
 font-family: 'Epilogue';
 font-style:normal;
@@ -85,10 +77,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 32px;
-/* or 200% */
-
-
-/* Text_Light_Gray */
 
 color: rgba(255, 255, 255, 0.64);
 }
@@ -112,8 +100,6 @@ line-height: 32px;
 
 letter-spacing: 3px;
 text-transform: uppercase;
-
-/* Text_Light_Accent */
 
 color: #EF6D58;
 }
@@ -156,10 +142,10 @@ border: none;
 .service{
 
     position: absolute;
-width: 28%;
-height: 4%;
-left: 36%;
-top: 130%;
+/* width:; */
+height: 10px;
+left: 47%;
+top: 120%;
 
 
 font-family: 'Epilogue';
@@ -175,15 +161,22 @@ text-transform: uppercase;
 color: #EF6D58;
 }
 
+.page2{
+    /* position: absolute; */
+    width: 95%;
+    /* height: 100px; */
 
-.page2 h4{
+}
+
+
+.headers h4{
     /* How I Can Help You W */
 
     position: absolute;
 width: 32%;
-height: 4%;
+height: 20%;
 left: 36%;
-top: 140%;
+top: 125%;
 
 
 font-family: 'Epilogue';
@@ -207,7 +200,7 @@ color: #391400;
     width: 75%;
 height: 40%;
 left:12.5%;
-top: 165%;
+top: 160%;
 
 align-content: center;
 box-sizing:border-box;
@@ -216,7 +209,26 @@ background: #FDF0E9;
 /* padding: 20px; */
 
 }
+.art-service h4{
+height: 2%;
+margin-top: 5%;
+margin-left: 5%;
 
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 800;
+font-size: 56px;
+line-height: 64px;
+
+text-align: center;
+letter-spacing: -1px; 
+
+color: #391400;
+    align-content: center;
+   
+
+}
 .art-service .card1{
     position: absolute;
     width: 50%;
@@ -245,19 +257,14 @@ border: 1px solid #F3D1BF;
 border: 1px solid #F3D1BF;
 
 }
-.art-service h4{
-    color: #391400;
-    padding-top: 30px;
-    align-content: center;
-    margin-left: 35%;
-    
-}
+
 
 .art-service li{
     list-style: none;
 }
 .art-service p{
     margin-left: 10%;
+    padding-top: 30px;
     
 
 }
@@ -271,14 +278,11 @@ border: 1px solid #F3D1BF;
     border-radius: 6px;
     align-content: center;
 }
+#learnMore{
+    width: 4rem;
+    height:2rem ;
+}
 
-/* .page3{
-    position: absolute;
-    width: 800px;
-height: 200px;
-left: 220px;
-top: 1300px;
-} */
 .more{
     position: absolute;
 text-align: center;
@@ -291,6 +295,10 @@ top: 110%;
     height: 40%;
 }
 
+
+/* ===============================================================================================================================
+================================================================================================================================== */
+
 .experience{
     top:1250px;
     left: 0%;
@@ -298,7 +306,7 @@ top: 110%;
     
 }
 .about{
-    top:1250px;
+    top:1280px;
     left: 0%;
     position:relative;
 }
@@ -325,21 +333,30 @@ top: 110%;
     position:relative;
 }
 
+
+/* Media========================================================================================================================
+-------------------------------------------------------------------------------------------------------------------------------- */
 @media all and (max-width: 909px) {
     span.psw {
         display: block;
         float: none;
     }
+    .nav-bar{
+
+        width: 90%;        
     
+    }
+    .rending-page{
+    position: relative;
+    width: 100%;
+
+    }
 .profile-image{
-    position: absolute;
+    /* position: absolute; */
     width: 60%;
     height: 32%;
     left: 30%;
     top: 15%;
-     
-
-/* background: url(/my-brand/images/lievin.jpeg); */
 
 }
 #image-id{
@@ -368,7 +385,7 @@ top: 110%;
 #detail{
     
     position: absolute;
-    width: 90%;
+    width: 87%;
     height: 3%;
     left: 13%;
     top: 70%;
@@ -383,7 +400,7 @@ top: 110%;
         
     position: absolute;
     width: 50%;
-    height: 2%;
+    height: 10px;
     left: 12%;
     top: 50%;
 
@@ -397,44 +414,69 @@ top: 110%;
  
     }
 
-    .service{
+    
+.page2{
+   
+    width: 100%;
+
+}
+
+ .service{
 
         position: absolute;
-    width: 28%;
     height: 4%;
-    left: 30%;
-    top: 85%;
-
+    padding-top: 70px;
+    /* top: 100%; */
     font-weight: 200;
     font-size: 10px;
     line-height: 20px;
    
     }
-        
-    .page2 h4{
-        /* How I Can Help You W */
-    
-        position: absolute;
-    width: 50%;
-    height: 4%;
-    left: 27%;
-    top: 90%;
-    
+
+   
+      
+    .headers h4{   
+   position: absolute;
+    width: 70%;
+    /* top:110%; */
+    left: 20%;    
     font-weight: 800;
     font-size: 26px;
-    /* line-height: 44px; */
+   padding-top: 80px;
     letter-spacing: 1px;
     line-height: 22px;
     
     }
     .art-service{
-        height: 60%;
-        top:100%;
-        left: 10%;
+        height:100%;
+        /* top:105%; */
+        left: 12%;
+        /* border: #EF6D58 1px solid; */
     }
-    .art-service #learnMore{
-        width: 30%;
+
+    .art-service h4{
+        height: 2%;
+        margin-top: 5%;
+        margin-left: 5%;
         
+        
+        font-family: 'Epilogue';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        
+        text-align: center;
+        letter-spacing: -1px; 
+        
+        color: #391400;
+            align-content: center;
+           
+        
+        }
+    .art-service #learnMore{
+        width: 20%;
+     
     }
 
     .art-service .card1{
@@ -451,35 +493,51 @@ top: 110%;
         height: 50%;
         top:50%;
         left:0%;
+        
 
+    }
+
+    .learnmore{
+        position: absolute;
+        width: 20%;
+        height: 4%;
     }
 
     .more{
         left: 15%;
+       
     }
-
+     */
+/* ===============================================================================================================================
+================================================================================================================================== */
     /* Experience section*/
-
-    .experience{
+    /* .experience{
         position: relative;
-       width:100% ;
-       height: 600px;
-        top:1280px;
-        
-        
+
+        padding: 20%;
+        width: 100%;
+        top:150rem;
+
     }
 
-    .about{
+    .experience iframe {
+        position: absolute;
+      padding: auto;;
+      left:0;
+      width: 100%;
+
+    } */
+    /* .about{
         top:1550px;
         left: 0%;
         position:relative;
-    }
-    .skills{
+    } */
+    /* .skills{
         top:1700px;
         left: 0%;
         position:relative;
     }
-    
+     */
     .blog{
         top:1810px;
         left: 0%;
@@ -489,13 +547,14 @@ top: 110%;
         top:1980px;
         left: 0%;
         position:relative;
+        
     } */
     
-    .footer{
+    /* .footer{
         top:2100px;
         left: 0%;
         position:relative;
-    }
+    } */
     
 
 
