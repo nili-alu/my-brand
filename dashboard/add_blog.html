@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <!-- <link rel="stylesheet" href="./dash_style/comment.css"> -->
+    <link rel="stylesheet" href="./dash_style/add_blog.css">
     <link rel="stylesheet" href="./dash_style/dashboard.css">
-    <link rel="stylesheet" href="./dash_style/new_account.css">
 
-    <title>New Account</title>
+    <title>New Blog</title>
 </head>
 
 <body>
@@ -20,7 +20,6 @@
         <nav class="navigation">
 
             <i id="profile" class='fa fa-user-circle' style='font-size:58px'></i>
-
             <input  id="check" type="checkbox">
             <label for="check">
                 <!-- <i class="fas fa-bars" id="btn"></i> -->
@@ -63,7 +62,6 @@
                     x.classList.toggle("change");
                   }
                   </script>
-
 
                   <ul class="menu">
                     <li><i class="fa fa-dashboard"></i><button id="text">Dasboard</button></li>
@@ -129,11 +127,10 @@
                     <li><i class="fa fa-plus"></i><button id="text">New Post</button></li>
                 </ul>
     
-            </nav>
 
         </nav>
         <aside>
-            <h3>Add a new User</h3>
+            <h3>Create new blog</h3>
 
 
             <div class="container1">
@@ -142,22 +139,18 @@
 
                     <div class="container2">
 
-                        <label for="uname"><b>Name</b></label>
-                        <input type="text" placeholder="Enter full name" name="uname" required>
+                        <label for="uname"><b>Blog title</b></label>
+                        <input type="text" placeholder="Enter blog title" name="uname" required>
 
-                        <label for="uname"><b>Email</b></label>
-                        <input type="text" placeholder="Enter email" name="uname" required>
+                        <label for="uname"><b>Blog description</b></label>
+                        <textarea name="uname" placeholder="paste your text here" id="" cols="50" rows="10"></textarea>
+                       
 
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="At least 8 characters" name="psw" required>
-                        <label for="psw"><b>Confirm Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <label for="uname">Upload image</b></label>
+                         <input type="file" id="myFile" name="filename">
 
-                        <label>
-                            <input type="checkbox" checked="checked" name="agree"> I agre to the terms and conditions
-                        </label>
 
-                        <button class="login-button" type="submit">Registar</button>
+                        <button class="login-button" type="submit">Post</button>
 
                     </div>
 
