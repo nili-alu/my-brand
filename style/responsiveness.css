@@ -1,7 +1,7 @@
 @media (max-width:909px){
 
 
-    iframe {
+  .experience  iframe {
         position: absolute;
       padding: auto;
       left:0;
@@ -15,17 +15,17 @@
 
         padding: 20%;
         width: 100%;
-        top:106rem;
+        top:116rem;
 
     }
-
+  
 
 .about{
     position: relative;
-    /* overflow:scroll; */
+   
     padding: 20%;
     width: 100%;
-        top:160rem;
+    top:165rem;
 
 }
 
@@ -36,24 +36,24 @@
     /* overflow:scroll; */
     padding: 20%;
     width: 100%;
-        top:200rem;
+        top:210rem;
 }
-
-iframe {
-    position: absolute;
-  padding: auto;
-  left:0;
-  margin: 0;
-  width: 100%;
-
-    
-}
-.contact-me{
+.blog{
     position: relative;
-    /* overflow:scroll; */
+
     padding: 20%;
     width: 100%;
-        top:205rem;
+        top:250rem;
+}
+
+
+
+.contact-me{
+    position: relative;
+
+    padding: 20%;
+    width: 100%;
+        top:325rem;
 
 }
 
@@ -62,8 +62,17 @@ iframe {
     /* overflow:scroll; */
     padding: 20%;
     width: 100%;
-        top:260rem;
+        top:380rem;
 
 
+}
+iframe {
+    position: absolute;
+  padding: auto;
+  left:0;
+  margin: 0;
+  width: 100%;
+
+    
 }
 }

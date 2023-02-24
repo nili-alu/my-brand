@@ -1,79 +1,3 @@
-/* 
-body{
-    
-    background: #FDF0E9;
-    left: 0;
-}
-
-
-.main h3{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-
-color: #0A376E;
-
-}
-
-.navigation #profile{
-    color: white;
-    width: 70px;
-    height: 70px;
-    margin-left:60px;
-    margin-top: 20px;
-   
-}
- .navigation{
-    position: absolute;
-    float: left;
-    width: 240px;
-    height:123%;
-    left: 0%;  
-    background: #28293E;
-top:0;
-}
-.menu{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    
-    position: absolute;
-    width: 183px;
-    
-    left: calc(50% - 183px/2 - 1px);
-    top: 84px;
-
-}
-.main li{
-    list-style: none;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 6px 10px;
-    gap: 16px;
-    
-    width: 134px;
-    height: 30px;
-    
-    background: #EF6D58;
-    border-radius: 50px;
-    
-}
-.main li:hover{
-    background-color:#0A376E;
-    color:  #EF6D58;
-}
-.menu i{
-    
-width: 24px;
-height: 24px;
-align-self: center;
-color: white;
-} */
 
 
 #text{
@@ -100,15 +24,15 @@ color: white;
 
 .main aside{
    
-    width: 100%;
-  
-    margin-left: 0%;
+    width: 75%;
+    /* left: 25%; */
+    margin-left: 20%;
 }
 .container1 {
     position: absolute;
-    width: 70%;
+    width: 40%;
     height: 506px;
-    left:15%;
+    left:40%;
 
     box-sizing: border-box;
     background: #FFFFFF;
@@ -127,7 +51,8 @@ color: white;
 }
 
 input[type=text],
-input[type=password] {
+input[type=password],
+textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -204,6 +129,9 @@ span.psw {
 }
 
 
+
+
+/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 909px) {
     /* span.psw {
         display: block;
@@ -215,4 +143,25 @@ span.psw {
        
 
     } */
+
+     .container2 {
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        
+    }
+
+    .container1 {
+        position: absolute;
+        width: 80%;
+        height: 506px;
+        left:10%;
+    
+        box-sizing: border-box;
+        background: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        border-radius: 15px;
+        box-shadow: 0px 8px 32px rgba(31, 38, 135, 0.3);
+    
+    }
 }

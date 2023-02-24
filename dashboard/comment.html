@@ -8,11 +8,10 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <!-- <link rel="stylesheet" href="./dash_style/comment.css"> -->
+    <link rel="stylesheet" href="./dash_style/comment.css">
     <link rel="stylesheet" href="./dash_style/dashboard.css">
-    <link rel="stylesheet" href="./dash_style/new_account.css">
 
-    <title>New Account</title>
+    <title>Comments</title>
 </head>
 
 <body>
@@ -20,7 +19,6 @@
         <nav class="navigation">
 
             <i id="profile" class='fa fa-user-circle' style='font-size:58px'></i>
-
             <input  id="check" type="checkbox">
             <label for="check">
                 <!-- <i class="fas fa-bars" id="btn"></i> -->
@@ -63,7 +61,6 @@
                     x.classList.toggle("change");
                   }
                   </script>
-
 
                   <ul class="menu">
                     <li><i class="fa fa-dashboard"></i><button id="text">Dasboard</button></li>
@@ -129,48 +126,43 @@
                     <li><i class="fa fa-plus"></i><button id="text">New Post</button></li>
                 </ul>
     
-            </nav>
 
         </nav>
         <aside>
-            <h3>Add a new User</h3>
+            <h3>Comments</h3>
 
+            <table>
+                <tr>
+                    <th>Blog id</th>
+                    <th>User email</th>
+                    <th>Comment</th>
+                    <th>Action</th>
 
-            <div class="container1">
-                <form action="/action_page.php" method="post">
-                    <button type="button" class="cancelbtn">X</button>
+                </tr>
 
-                    <div class="container2">
+                <tr>
+                    <td>1</td>
+                    <td>niyo125@gmail.com</td>
+                    <td>Hey, interested post <br>Hey, interested post</td>
+                    <td>
+                        <button id="reply"><i class="fa fa-reply"></i>Reply</button>
+                        <button id="delete"><i class='fa fa-trash'></i>Delete</button>
 
-                        <label for="uname"><b>Name</b></label>
-                        <input type="text" placeholder="Enter full name" name="uname" required>
+                    </td>
+                <tr>
+                    <td>2</td>
+                    <td>niyo125@gmail.com</td>
+                    <td>Hey, interested post <br>Hey, interested post</td>
+                    <td>
+                        <button id="reply"><i class="fa fa-reply"></i>Reply</button>
+                        <button id="delete"><i class='fa fa-trash'></i>Delete</button>
+                    </td>
 
-                        <label for="uname"><b>Email</b></label>
-                        <input type="text" placeholder="Enter email" name="uname" required>
+                </tr>
 
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="At least 8 characters" name="psw" required>
-                        <label for="psw"><b>Confirm Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-
-                        <label>
-                            <input type="checkbox" checked="checked" name="agree"> I agre to the terms and conditions
-                        </label>
-
-                        <button class="login-button" type="submit">Registar</button>
-
-                    </div>
-
-
-                </form>
-
-            </div>
-
+            </table>
 
         </aside>
-
-    </div>
-
 </body>
 
 </html>

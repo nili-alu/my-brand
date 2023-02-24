@@ -507,55 +507,5 @@ top: 110%;
         left: 15%;
        
     }
-     */
-/* ===============================================================================================================================
-================================================================================================================================== */
-    /* Experience section*/
-    /* .experience{
-        position: relative;
-
-        padding: 20%;
-        width: 100%;
-        top:150rem;
-
-    }
-
-    .experience iframe {
-        position: absolute;
-      padding: auto;;
-      left:0;
-      width: 100%;
-
-    } */
-    /* .about{
-        top:1550px;
-        left: 0%;
-        position:relative;
-    } */
-    /* .skills{
-        top:1700px;
-        left: 0%;
-        position:relative;
-    }
-     */
-    .blog{
-        top:1810px;
-        left: 0%;
-        position: relative;
-    }
-    /* .contact-me{
-        top:1980px;
-        left: 0%;
-        position:relative;
-        
-    } */
-    
-    /* .footer{
-        top:2100px;
-        left: 0%;
-        position:relative;
-    } */
-    
-
-
 }
+   

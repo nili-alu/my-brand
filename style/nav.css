@@ -83,15 +83,13 @@ margin-left: 30%;
       float: none;
       display: block;
       text-align: left;
-     
-      /* color: #FFFFFF; */
+
     }
     .topnav {
       background: #28293E;
      
         overflow: hidden;
-        /* margin-left: 0%; */
-    width: 100%;
+    width: 25.78rem;
     }
   }
   

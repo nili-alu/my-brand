@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/nav.css">
     <link rel="stylesheet" href="./style/blog.css">
@@ -13,89 +14,92 @@
 </head>
 
 <body>
-    <header class="nav-bar">
-        <!-- <iframe src="./nav.html" width="100%" height="80px" frameborder="0"></iframe> -->
+
+    <!-- <header class="nav-bar">
 
         <div class="topnav" id="myTopnav">
+    
+    
+             <a href="./index.html">Home</a>
+             <a href="index.html#page_about">About</a>
+             <a href="index.html#page_skills">Skills</a>
+             <a href="index.html#page_experience">My work</a>
+             <a href="./index.html#page_blog">Blogs</a>
+             <a href="./index.html#page_contact">Contact</a>
+             <a href="./login.html">Login</a>
+    
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                 <i class="fa fa-bars"></i>
+             </a>
+         </div>
+    
+     </header>  -->
+    <div class="overall_container">
 
-
-            <a href="./index.html">Home</a>
-            <a href="index.html#page_about">About</a>
-            <a href="index.html#page_skills">Skills</a>
-            <a href="index.html#page_experience">My work</a>
-            <a href="./index.html#page_blog">Blogs</a>
-            <a href="./index.html#page_contact">Contact</a>
-            <a href="./login.html">Login</a>
-
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-
-    </header>
-
-    <div class="blog_container">
-        <div class="headers">
+   
+    <!-- <div class="headers"> -->
+        
             <h5>our blogs</h5>
             <h2 id="title">Latest blogs <br> article</h2>
-            
-        </div>
-        <div  class="headers">
+       
+
+
+        <div class="headers">
             <button class="more">Discover All</button>
         </div>
+    <!-- </div> -->
 
-        
-        <div>
-            <section class="blog_line">
-                <article class="main_article">
-                    <div class="main_image">
-                        <img class="center_image" src="./images/blog1.jpg" alt="error">
-                        <p>Stories</p>
+    <div class="main_container">
 
-                        <h2>Agency is a business you hire to outsource</h2>
-                    </div>
+        <article class="main_article">
+            <div class="main_image">
+                <img class="center_image" src="./images/blog1.jpg" alt="error">
+                <p>Stories</p>
 
-                </article>
-
-                <aside>
-                    <article class="side_image">
-                        <img class="image" src="./images/blog1.jpg" alt="error">
-                        <p>Design</p>
-
-                        <h2>Outsource your digital <br>
-                            marketing efforts</h2>
-
-                    </article>
-                    <article class="side_image">
-                        <img class="image" src="./images/blog1.jpg" alt="error">
-                        <p>Design</p>
-
-                        <h2>Outsource your digital <br>
-                            marketing efforts</h2>
-                    </article>
-
-                </aside>
-            </section>
-
-
-            <div class="low_part">
-                <section>
-                    <h4>Newsletter</h4>
-                    <p>A digital agency is a business you hire to outsource</p>
-                </section>
-                <section>
-                    <form action=""><br><br><br>
-                        <input class="input1" type="email" placeholder="Your email">
-                        <input class="input2" type="submit" name="Subscribe">
-                    </form>
-                </section>
+                <h2>Agency is a business you hire to outsource</h2>
             </div>
 
+        </article>
 
-        </div>
+        <article class="side_article">
+            <div>
+                <img class="image" src="./images/blog1.jpg" alt="error">
+                <p>Design</p>
+
+                <h2>Outsource your digital <br>
+                    marketing efforts</h2>
+
+            </div>
+            <div>
+
+
+                <img class="image" src="./images/blog1.jpg" alt="error">
+                <p>Design</p>
+
+                <h2>Outsource your digital <br>
+                    marketing efforts</h2>
+            </div>
+        </article>
 
     </div>
 
+
+    <div class="low_part">
+        <section class="newsletter">
+            <h4>Newsletter</h4>
+            <p>A digital agency is a business you hire to outsource</p>
+        </section>
+        <section>
+            <form action=""><br><br><br>
+                <input class="input1" type="email" placeholder="Your email">
+                <input class="input2" type="submit" name="Subscribe">
+            </form>
+        </section>
+    </div>
+
+
+
+</div>
 </body>
 
 </html>
