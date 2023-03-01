@@ -158,6 +158,10 @@ aside .records{
  #check:checked ~ menu{
     display: flex;
  }
+
+ a{
+    text-decoration: none;
+ }
    /* .menu{
         display: flex;
         flex-direction: column;

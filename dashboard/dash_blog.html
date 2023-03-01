@@ -63,9 +63,9 @@
                   </script>
 
             <ul class="menu">
-                <li><i class="fa fa-dashboard"></i><button id="text">Dasboard</button></li>
-                <li><i class="fa fa-bar-chart"></i><button id="text">Statistics</button></li>
-                <li><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="./dashboard.html"> <li><i class="fa fa-dashboard"></i><button id="text">Dasboard</button></li></a>
+                <!-- <li><i class="fa fa-bar-chart"></i><button id="text">Statistics</button></li> -->
+               <a href="./dash_blog.html"> <li><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_255_175)">
                             <path
                                 d="M9.5 4H5.5C4.94772 4 4.5 4.44772 4.5 5V9C4.5 9.55228 4.94772 10 5.5 10H9.5C10.0523 10 10.5 9.55228 10.5 9V5C10.5 4.44772 10.0523 4 9.5 4Z"
@@ -88,8 +88,8 @@
                         </defs>
                     </svg>
                     <button id="text">Blogs</button>
-                </li>
-                <li><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </li></a>
+               <a href="./comment.html"><li><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_255_110)">
                             <path
                                 d="M12.5 20L9.5 17H7.5C6.70435 17 5.94129 16.6839 5.37868 16.1213C4.81607 15.5587 4.5 14.7956 4.5 14V8C4.5 7.20435 4.81607 6.44129 5.37868 5.87868C5.94129 5.31607 6.70435 5 7.5 5H17.5C18.2956 5 19.0587 5.31607 19.6213 5.87868C20.1839 6.44129 20.5 7.20435 20.5 8V14C20.5 14.7956 20.1839 15.5587 19.6213 16.1213C19.0587 16.6839 18.2956 17 17.5 17H15.5L12.5 20Z"
@@ -105,8 +105,8 @@
                             </clipPath>
                         </defs>
                     </svg>
-                    </i><button id="text">Message</button></li>
-                <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </i><button id="text">Comments</button></li></a>
+               <a href="./new_account.html"><li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_255_118)">
                             <path
                                 d="M12.5 11.5C14.7091 11.5 16.5 9.70914 16.5 7.5C16.5 5.29086 14.7091 3.5 12.5 3.5C10.2909 3.5 8.5 5.29086 8.5 7.5C8.5 9.70914 10.2909 11.5 12.5 11.5Z"
@@ -121,17 +121,26 @@
                             </clipPath>
                         </defs>
                     </svg>
-                    </i><button id="text">New Account</button></li>
-                <li><i class="fa fa-sign-out"></i><button id="text">Logout</button></li>
-                <li><i class="fa fa-plus"></i><button id="text">New Post</button></li>
+                    </i><button id="text">New Account</button></li></a>
+
+               <a href="/my-brand/index.html"><li><i class="fa fa-sign-out"></i><button id="text">Logout</button></li></a>
+                <a href="./new_blog.html"><li><i class="fa fa-plus"></i><button id="text">New Post</button></li></a>
             </ul>
 
-        </nav>
-        </nav>
+        </nav>   
         <aside>
             <h3>Blogs</h3>
-            <div class="blogs_container">
+            <div id="container" class="blogs_container">
+
                 <article class="blog">
+                    <img src="${element.image}" id="image" alt="">
+                    <h3>${element.title}</h3>
+                    <p>${element.description}</p>
+            
+                    <button class="modify">Modify</button>
+                    <!-- <button type="submit" onclick='deleteblog(${element.id});' class="delete">Delete</button> -->
+                </article>
+             <!--                <article class="blog">
                     <img src="/my-brand/images/blog1.jpg" alt="">
                     <h3>The Ultimate Guide to Bookstagram for Beginners</h3>
                     <p>What is Lorem Ipsum?
@@ -142,46 +151,13 @@
                     <button class="modify">Modify</button>
                     <button class="delete">Delete</button>
                 </article>
-                <article class="blog">
-                    <img src="/my-brand/images/blog1.jpg" alt="">
-                    <h3>The Ultimate Guide to Bookstagram for Beginners</h3>
-                    <p>What is Lorem Ipsum?
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. </p>
-
-                    <button class="modify">Modify</button>
-                    <button class="delete">Delete</button>
-                </article>
-                <article class="blog">
-                    <img src="/my-brand/images/blog1.jpg" alt="">
-                    <h3>The Ultimate Guide to Bookstagram for Beginners</h3>
-                    <p>What is Lorem Ipsum?
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. </p>
-
-                    <button class="modify">Modify</button>
-                    <button class="delete">Delete</button>
-                </article>
-                <article class="blog">
-                    <img src="/my-brand/images/blog1.jpg" alt="">
-                    <h3>The Ultimate Guide to Bookstagram for Beginners</h3>
-                    <p>What is Lorem Ipsum?
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. </p>
-
-                    <button class="modify">Modify</button>
-                    <button class="delete">Delete</button>
-                </article>
-            </div>
+            </div> -->
 
 
         </aside>
 
     </div>
-
+<script src="/my-brand/js/retrieve.js"></script>
 </body>
 
 </html>
