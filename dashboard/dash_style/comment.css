@@ -124,6 +124,7 @@ table {
   }
 
   #reply {
+    cursor: pointer;
     border: none;
    background: #28293E;
     color:white; border:none"
@@ -133,6 +134,7 @@ table {
     transition-duration: 0.4s;
   }
   #delete {
+    cursor: pointer;
     border: none;
     background:#EF6D58;
      color:white; border:none"
@@ -142,4 +144,8 @@ table {
 
     transition-duration: 0.4s;
     background: #28293E;
+  }
+
+  #tableValue{
+    margin-top: 0px;
   }

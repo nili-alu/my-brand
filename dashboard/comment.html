@@ -19,52 +19,59 @@
         <nav class="navigation">
 
             <i id="profile" class='fa fa-user-circle' style='font-size:58px'></i>
-            <input  id="check" type="checkbox">
+            <input id="check" type="checkbox">
             <label for="check">
                 <!-- <i class="fas fa-bars" id="btn"></i> -->
                 <div id="btn" class="container" onclick="myFunction(this)">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
-                  </div>
+                </div>
                 <!-- <i class="fas fa-times" id="cancel" ></i> -->
             </label>
             <style>
                 .container {
-                  display: inline-block;
-                  cursor: pointer;
-                  z-index: 20;
+                    display: inline-block;
+                    cursor: pointer;
+                    z-index: 20;
                 }
-                
-                .bar1, .bar2, .bar3 {
-                  width: 35px;
-                  height: 5px;
-                  background-color:white;
-                  margin:8px 0;
-                  transition: 0.4s;
-                }
-                
-                .change .bar1 {
-                  transform: translate(0, 11px) rotate(-45deg);
-                }
-                
-                .change .bar2 {opacity: 0;}
-                
-                .change .bar3 {
-                  transform: translate(0, -11px) rotate(45deg);
-                }
-                </style>
-               
-                  
-                  <script>
-                  function myFunction(x) {
-                    x.classList.toggle("change");
-                  }
-                  </script>
 
-                  <ul class="menu">
+                .bar1,
+                .bar2,
+                .bar3 {
+                    width: 35px;
+                    height: 5px;
+                    background-color: white;
+                    margin: 8px 0;
+                    transition: 0.4s;
+                }
+
+                .change .bar1 {
+                    transform: translate(0, 11px) rotate(-45deg);
+                }
+
+                .change .bar2 {
+                    opacity: 0;
+                }
+
+                .change .bar3 {
+                    transform: translate(0, -11px) rotate(45deg);
+                }
+            </style>
+
+
+            <script>
+                function myFunction(x) {
+                    x.classList.toggle("change");
+                }
+            </script>
+
+            <ul class="menu">
+                <a href="./dashboard.html">
                     <li><i class="fa fa-dashboard"></i><button id="text">Dasboard</button></li>
-                    <li><i class="fa fa-bar-chart"></i><button id="text">Statistics</button></li>
+                </a>
+                <!-- <li><i class="fa fa-bar-chart"></i><button id="text">Statistics</button></li> -->
+                <a href="./dash_blog.html">
                     <li><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_255_175)">
                                 <path
@@ -89,6 +96,8 @@
                         </svg>
                         <button id="text">Blogs</button>
                     </li>
+                </a>
+                <a href="./comment.html">
                     <li><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_255_110)">
                                 <path
@@ -105,7 +114,9 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                        </i><button id="text">Message</button></li>
+                        </i><button id="text">Comments</button></li>
+                </a>
+                <a href="./new_account.html">
                     <li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_255_118)">
                                 <path
@@ -122,47 +133,37 @@
                             </defs>
                         </svg>
                         </i><button id="text">New Account</button></li>
+                </a>
+
+                <a href="/my-brand/index.html">
                     <li><i class="fa fa-sign-out"></i><button id="text">Logout</button></li>
+                </a>
+                <a href="./new_blog.html">
                     <li><i class="fa fa-plus"></i><button id="text">New Post</button></li>
-                </ul>
-    
+                </a>
+            </ul>
 
         </nav>
         <aside>
             <h3>Comments</h3>
 
-            <table>
-                <tr>
+            <table >
+                <tr id="headers">
                     <th>Blog id</th>
                     <th>User email</th>
                     <th>Comment</th>
+                    <th>Likes</th>
                     <th>Action</th>
 
                 </tr>
 
-                <tr>
-                    <td>1</td>
-                    <td>niyo125@gmail.com</td>
-                    <td>Hey, interested post <br>Hey, interested post</td>
-                    <td>
-                        <button id="reply"><i class="fa fa-reply"></i>Reply</button>
-                        <button id="delete"><i class='fa fa-trash'></i>Delete</button>
+            </table  >
+                <table  id="tableValue" ></table>
+              
 
-                    </td>
-                <tr>
-                    <td>2</td>
-                    <td>niyo125@gmail.com</td>
-                    <td>Hey, interested post <br>Hey, interested post</td>
-                    <td>
-                        <button id="reply"><i class="fa fa-reply"></i>Reply</button>
-                        <button id="delete"><i class='fa fa-trash'></i>Delete</button>
-                    </td>
-
-                </tr>
-
-            </table>
 
         </aside>
+        <script src="/my-brand/js/getComment.js"></script>
 </body>
 
 </html>

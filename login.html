@@ -43,25 +43,28 @@
     <section class="login-sessection">
 
         <div class="container1">
-            <form action="/action_page.php" method="post">
+            <p id="error_message"></p>
+            <form class="login_form" action="" id="login_user" name="form" method="post">
                 <button type="button" class="cancelbtn">X</button>
 
                 <div class="container2">
 
                     <div class="google">
-                        <label for="uname"><b>Login</b></label>
-                        <h4>G Login with Google</h4>
+                        <label for="uname"><h3>Only admin can login</h3></label><br><br><br>
+                        <!-- <h4>G Login with Google</h4> -->
                     </div>
 
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
-
+                    <label for="uname"><b>Email  &nbsp;&nbsp;&emsp;</b></label>
+                    <input autocomplete="off" type="text" placeholder="Enter User email" id="email" name="email" required>
+                    <div id="email_error">email required</div>
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required><br>
-
+                    <input type="password" placeholder="Enter Password" id="password" name="password" required >
+                    <br>
+                    <!-- <span class="p-viewer" id="p-viewer">
+                        <i class="fa fa-eye" aria-hidden="true"></i> -->
+                    <div id="pass_error">password required</div>
                     <label>
                         <input type="checkbox" checked="uncheck" name="remember">Remember me </label>
-
 
                     <button class="login-button" type="submit">Login</button>
 
@@ -75,6 +78,7 @@
             </form>
 
         </div>
+        <script src="/my-brand/js/login2.js"></script>
     </section>
 
 </body>

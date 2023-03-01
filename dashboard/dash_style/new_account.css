@@ -100,15 +100,15 @@ color: white;
 
 .main aside{
    
-    width: 100%;
+    width: 80%;
   
-    margin-left: 0%;
+    margin-left: 20%;
 }
-.container1 {
+ .container1 {
     position: absolute;
-    width: 70%;
-    height: 506px;
-    left:15%;
+    width: 60%;
+    height: 526px;
+    left:30%;
 
     box-sizing: border-box;
     background: #FFFFFF;
@@ -155,7 +155,7 @@ button:hover {
 }
 
 .cancelbtn {
-
+    cursor: pointer;
     width: 32px;
     height: 32px;
     text-align: center;
@@ -215,4 +215,15 @@ span.psw {
        
 
     } */
+    .main aside{
+   
+        width: 75%;  
+        margin-left: 25%;
+    }
+     .container1 {
+        position: absolute;
+        width: 70%;
+        height: 526px;
+        left:15%;
+}
 }

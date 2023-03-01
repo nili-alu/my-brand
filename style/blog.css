@@ -148,6 +148,10 @@ color: #391400;
   
 } 
 
+#commentForm{
+    display: none;
+}
+
 @media (max-width:909px){
 
     .main_container {
