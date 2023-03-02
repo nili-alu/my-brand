@@ -1,51 +1,63 @@
-var email = document.forms['form']['email'];
-var password = document.forms['form']['password'];
-
-var email_error = document.getElementById('email_error');
-var pass_error = document.getElementById('pass_error');
-
-email.addEventListener('textInput', email_Verify);
-password.addEventListener('textInput', pass_Verify);
-
-function validated(){
-    // await fetch(" http://localhost:3000/posts", {
-    //     method: "POST",
-    //     body: JSON.stringify(validated),
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //   });
-    //   alert("New user added successful");
-    // };
-    if (email.value.length < 9) {
-        email.style.border = '1px solid red';
-        email_error.style.display ='block';
-        email.focus();
-        return false;
-
+function toggleForm() {
+    var x = document.getElementById("myForm");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
     }
-
-    if (password.value.length < 6) {
-        password.style.border = '1px solid red';
-        pass_error.style.display ='block';
-        password.focus();
-        return false;
-
+  }
+  function scrollToContactMe() {
+    const contactMeSection = document.querySelector("#contact-me");
+    contactMeSection.scrollIntoView({ behavior: "smooth" });
+  }
+  
+  // frorm validatin
+  const form = document.querySelector("form");
+  form.addEventListener("submit", (event) => {
+    // Prevent the form from submitting
+    event.preventDefault();
+  
+    // Validate the form inputs
+    const emailInput = document.querySelector("#email");
+    const email = emailInput.value;
+    const password = document.querySelector("#password").value;
+    const confirmPassword = document.querySelector("#confirm-password").value;
+    if (!email) {
+      emailInput.setCustomValidity("Please enter your email");
+      emailInput.style.borderColor = "red";
+      emailInput.reportValidity();
+      return;
     }
-
-    function email_Verify(){
-        if(email.value.length >= 8) {
-            email.style.border = '1px solid silver';
-            email_error.style.display = 'none';
-            return true;
-        }
+  
+    if (!isValidEmail(email)) {
+      emailInput.setCustomValidity("Please enter a valid email");
+      emailInput.style.borderColor = "red";
+      emailInput.reportValidity();
+      return;
     }
-
-    function email_Verify(){
-        if(password.value.length >= 8) {
-            password.style.border = '1px solid silver';
-            pass_error.style.display = 'none';
-            return true;
-        }
+  
+    if (!password) {
+      alert("Please enter a password");
+      return;
     }
-}
+  
+    if (password.length < 8) {
+      alert("Password must be at least 8 characters long");
+      return;
+    }
+  
+    if (password !== confirmPassword) {
+      alert("Passwords do not match");
+      return;
+    }
+  
+    // Submit the form
+    form.submit();
+  });
+  
+  function isValidEmail(email) {
+    // Regular expression to match email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+  
