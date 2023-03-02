@@ -38,7 +38,7 @@ const createUser = async (e) => {
                 body: JSON.stringify(doc),
                 headers: { 'Content-Type': 'application/json' }
             });
-            user_details = {name: form.name.value,email: form.email.value, role: 'user'}
+            user_details = {name: form.name.value,email: form.email.value, password: form.password.value, role: 'user'}
             
             localStorage.setItem('user',JSON.stringify(user_details))
             window.location.replace('/my-brand/dashboard/dashboard.html');
