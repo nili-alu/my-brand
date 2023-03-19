@@ -1,9 +1,8 @@
-
-let blogId = '';
-
-
+let blogId = "";
 const fetchData = async () => {
-  const res = await fetch("http://localhost:3000/posts");
+  const res = await fetch(
+    "https://mybrand-backend-production-309f.up.railway.app/api/blogs"
+  );
 
   const postData = await res.json();
 
@@ -12,15 +11,16 @@ const fetchData = async () => {
   let template = "";
 
   postData.forEach((element) => {
+    console.log(element);
     template += `
           <article id="blog" class="blog">
           <img src="${element.image}" id="image" alt="">
           <h3>${element.title}</h3>
           <p>${element.description}</p>
   
-          <button type="submit" onclick="openForm(${element.id})" id="modify" class="modify">Modify</button>
+          <button type="submit" onclick="openForm('${element._id}')" id="modify" class="modify">Modify</button>
           
-          <button type="submit" onclick='deleteblog(${element.id});' class="delete">Delete</button>
+          <button type="submit" onClick="deleteBlog('${element._id}')" class="delete">Delete</button>
       </article>
           
           `;
@@ -31,49 +31,62 @@ const fetchData = async () => {
 
 window.addEventListener("DOMContentLoaded", fetchData);
 
-const deleteblog = async (article_id) => {
-  await fetch(`http://localhost:3000/posts/${article_id}`, {
-    method: "DELETE",
+
+function deleteBlog(article_id)  {
+
+  fetch(`https://mybrand-backend-production-309f.up.railway.app/api/blogs/delete/${article_id}`,
+  {
+      method: "DELETE"
+  })
+  .then((response) => response.json())
+  .then((data) => {
+      // functionalities of delete
+      location.reload();
+
+  })
+  .catch((err) => {
+      alert(err)
   });
-};
+
+}
 
 
 const formContainer = document.getElementById("formContainer");
 const formInput = document.getElementById("formModify");
 
-formContainer.style.display = 'none';
+formContainer.style.display = "none";
 
-const openForm = async(article_id) => {
-  const response = await fetch(`http://localhost:3000/posts/${article_id}`);
+const openForm = async (article_id) => {
+
+  const response = await fetch(`https://mybrand-backend-production-309f.up.railway.app/api/blogs/${article_id}`);
   const data = await response.json();
 
-  formContainer.style.display = 'block';
+  formContainer.style.display = "block";
 
   formInput.title.value = data.title;
   formInput.description.value = data.description;
   formInput.myFile.value = data.image;
-  blogId = data.id
+  
+  formInput.elements.id.value=data._id;
 };
 
-
-const update = async() => {
+const update = async () => {
+  const id=formInput.elements.id.value;
   const post = {
     title: formInput.title.value,
     description: formInput.description.value,
-    image: formInput.myFile.value
-
-  }
-  const response = await fetch(`http://localhost:3000/posts/${blogId}}`,
-  {
-    method: 'PUT',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(post),
-
-  }
+    image: formInput.myFile.value,
  
-  );
+  };
+  const response = await fetch(`https://mybrand-backend-production-309f.up.railway.app/api/blogs/update/${id}`, {
+  method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(post),
+  });
+  if(response.ok){
+    location.reload()
+  }
 }
-
 if (formInput != null){
 
   formInput.addEventListener("submit", (e) => {
@@ -82,26 +95,3 @@ if (formInput != null){
 })
 }
 
-
-
-
-
-    // function openForm() {
-    //     document.getElementById("formModify").style.display = "block";
-    // }
-
-
-    // function closeForm() {
-    //     document.getElementById("formContainer").style.display = "none";
-
-    // }
-
-
-
-// const modifyblog =  async (article_id) => {
-//   await fetch(`http://localhost:3000/posts/${article_id}`, {
- 
-// getElementById:("modify") =
-
-// addEventListener("click",contentEditable =true)}
-// )};

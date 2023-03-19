@@ -15,7 +15,7 @@
     <title>Dashboard</title>
 </head>
 
-<body>
+<body onload="adminBlog()">
     <div class="main">
         <nav class="navigation">
 
@@ -28,7 +28,7 @@
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                 </div>
-                <!-- <i class="fas fa-times" id="cancel" ></i> -->
+                
             </label>
             <style>
                 .container {
@@ -71,7 +71,6 @@
                 <a href="./dashboard.html">
                     <li><i class="fa fa-dashboard"></i><button id="text">Dasboard</button></li>
                 </a>
-                <!-- <li><i class="fa fa-bar-chart"></i><button id="text">Statistics</button></li> -->
                 <a href="./dash_blog.html">
                     <li><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_255_175)">
@@ -149,7 +148,6 @@
             <h3>Blogs</h3>
             <div id="container" class="blogs_container">
 
-
             </div>
 
             <div class="container1" id="formContainer">
@@ -164,12 +162,12 @@
                         <label for="uname"><b>Blog description</b></label>
                         <textarea name="uname" placeholder="paste your text here" id="description" cols="50"
                             rows="10"></textarea>
-
+                        <input type="hidden" name="id">
 
                         <label for="uname">Upload image as url</b></label>
                         <input type="url" id="myFile" name="filename">
 
-                        <button class="login-button" onclick="update();" type="submit">Update</button>
+                        <button class="login-button" onclick="update()" type="submit">Update</button>
 
                     </div>
                 </form>
@@ -177,7 +175,8 @@
         </aside>
 
     </div>
-    <script src="/my-brand/js/retrieve.js"></script>
+    <script src="../js/retrieve.js"></script>
+    <!-- <script src="../js/updateBlog.js"></script> -->
     <script>
         function closeForm() {
             document.getElementById("formContainer").style.display = "none";

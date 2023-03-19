@@ -92,7 +92,14 @@ border-radius: 6px;
     color: #391400;
 }
 
+#commentspace{
+   
+    padding: 20px;
+    background-color: white;
+    width: 30%;
+    margin-top: 5px;
 
+}
 
 
 .low_part{

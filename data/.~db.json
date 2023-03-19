@@ -35,6 +35,12 @@
       "description": "srdgfh",
       "image": "https://fastly.picsum.photos/id/887/536/354.jpg?hmac=BhB_p4OMZPihyzYBh9wVkmcPaGrf_e8cvNFz4zT78o8",
       "id": 6
+    },
+    {
+      "title": "Entertainment ",
+      "description": "hfsgdfdf",
+      "image": "http://localhost:4000/api/blogs/create",
+      "id": 7
     }
   ],
   "users": [

@@ -1,19 +1,37 @@
+// import Toastify from 'toastify-js'
+
 const ContactUS = document.querySelector("#form");
 const Contact = async (event) => {
   event.preventDefault();
   const Con = {
     email: ContactUS.email.value,
     subject:ContactUS.subject.value,
-    description: ContactUS.description.value,
+    message: ContactUS.message.value,
+    
   };
-  await fetch(" http://localhost:3000/Contact", {
+ 
+  await fetch("https://mybrand-backend-production-309f.up.railway.app/api/messages/create", {
     method: "POST",
     body: JSON.stringify(Con),
     headers: {
       "Content-Type": "application/json",
     },
   });
-//   alert("thank you for commenting, <br> your Contact will help us to improve");
+  alert("thank you for reaching out \n we will back to you soon")
+  // Toastify({
+  //   text: "This is a toast",
+  //   duration: 3000,
+  //   destination: "https://github.com/apvarun/toastify-js",
+  //   newWindow: true,
+  //   close: true,
+  //   gravity: "top", // `top` or `bottom`
+  //   position: "left", // `left`, `center` or `right`
+  //   stopOnFocus: true, // Prevents dismissing of toast on hover
+  //   style: {
+  //     background: "linear-gradient(to right, #00b09b, #96c93d)",
+  //   },
+  //   onClick: function(){} // Callback after click
+  // }).showToast();
 };
 
 ContactUS.addEventListener("submit", Contact);
