@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style/nav.css">
     <link rel="stylesheet" href="./style/blog.css">
     <link rel="stylesheet" href="/my-brand/dashboard/dash_style/add_blog.css">
+    
     <title>Blog</title>
 </head>
 
@@ -33,9 +34,10 @@
 
         <div class="main_container">
 
-            <article class="main_article">
-                <div class="main_image">
-                    <img class="center_image" src="./images/blog1.jpg" alt="error">
+            <article  class="main_article">
+                <div id="mainBlog" class="main_image">
+                    <p>Stories</p>
+                    <!-- <img class="center_image" src="./images/blog1.jpg" alt="error">
                     <p>Stories</p>
 
                     <h2>Agency is a business you hire to outsource</h2>
@@ -46,43 +48,33 @@
                         into electronic typesetting, remaining essentially unchanged.
                         It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
                         passages, and more recently with desktop publishing software
-                        like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <div class="likes" id="likes_div">
-                        <button style="cursor: pointer;"><i id="like" class="fa fa-thumbs-up"
-                                aria-hidden="true"></i></button>
-                        <p class="no_likes" id="no_likes"></p>
-                    </div>
-                    <div class="comments">
-                        <div id="commentForm" class="container1">
-                            <form id="form">
-                                <button type="button" onclick="closeForm()" class="cancelbtn">X</button>
-
-                                <div class="container2">
-
-                                    <label for="uname"><b>Your email</b></label>
-                                    <input type="text" id="email" placeholder="Enter your email" name="uname" required>
-
-                                    <label for="uname"><b>Your comment message</b></label>
-                                    <textarea name="uname" placeholder="your comment message here" id="description"
-                                        cols="50" rows="10"></textarea>
-
-                                    <button class="comment-button" type="submit">Comment</button>
-                                   
-
-                                </div>
-
-
-                            </form>
-
-
-                        </div>
-
-
-                        <!-- <input type="textarea" placeholder="Write you comment here"> -->
-                        <button id="comment" onclick="openForm()" style="cursor: pointer;">Comment</button>
-                        <p class="no_comments" id="no_comments"></p>
-                    </div><br>
+                        like Aldus PageMaker including versions of Lorem Ipsum.</p> -->
                 </div>
+                <div class="comments">
+                    <div id="commentForm" class="container1">
+                        <form id="form">
+                            <button type="button" onclick="closeForm()" class="cancelbtn">X</button>
+
+                            <div class="container2">
+
+                                <label for="uname"><b>Your email</b></label>
+                                <input type="text" id="email" placeholder="Enter your email" name="uname" required>
+
+                                <label for="uname"><b>Your comment message</b></label>
+                                <textarea name="uname" placeholder="your comment message here" id="description"
+                                    cols="50" rows="10"></textarea>
+
+                                <button class="comment-button" type="submit">Comment</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <!-- <input type="textarea" placeholder="Write you comment here"> -->
+                    <button id="comment" onclick="openForm()" style="cursor: pointer;">Comment</button>
+                    <p class="no_comments" id="no_comments"></p>
+                </div><br>
+
 
 
             </article>
@@ -102,7 +94,7 @@
                     <div class="comments">
                         <div id="commentForm" class="container1">
                             <form id="form">
-                                <button type="button"   onclick="closeForm()" class="cancelbtn">X</button>
+                                <button type="button" onclick="closeForm()" class="cancelbtn">X</button>
 
                                 <div class="container2">
 
@@ -147,7 +139,7 @@
                     <div class="comments">
                         <div id="commentForm" class="container1">
                             <form id="form">
-                                <button type="button"    onclick="closeForm()" class="cancelbtn">X</button>
+                                <button type="button" onclick="closeForm()" class="cancelbtn">X</button>
 
                                 <div class="container2">
 
@@ -197,7 +189,7 @@
 
     </div>
 
-    <script src="/my-brand/js/index.js"></script>
+    <script src="./js/index.js"></script>
     <script>
         function openForm() {
             document.getElementById("commentForm").style.display = "block";

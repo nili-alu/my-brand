@@ -1,39 +1,32 @@
 
+const loginForm = document.querySelector("#login_user");
+const username = document.querySelector("#email");
+const password = document.querySelector("#password");
+const error=document.getElementById("error");
+let errMessage=""; 
 
-// select the login form
-const loginForm = document.querySelector('#login_user');
-// const loader = document.querySelector('#loader');
-// add a submit event listener to the form
-loginForm.addEventListener('submit', async (event) => {
+ const login = async (event) => {
   event.preventDefault();
+  const email = document.querySelector("#email").value;
+  const password = document.querySelector("#password").value;
 
-  // get the email and password values from the form inputs
-  const email = document.querySelector('#email').value;
-  const password = document.querySelector('#password').value;
+  
+  axios.post('https://mybrand-backend-production-309f.up.railway.app/api/login/create', { email, password })
+  .then(response => {
+     // Store the token in a browser cookie or local storage for future requests
+     document.cookie = `token=${response.data.token}; HttpOnly`;
+     if(!(email || password)){
+        
+        window.location.href = './login.html';
+     }
+     alert("Saccessfully logged!!")
+     window.location.href = '/my-brand/dashboard/dashboard.html';
+     // Redirect the user to the protected page on the frontend
+   
+  })
+  .catch(error => {
+    alert(error.response.data.message);
+  });
+}
 
-  try {
-    // fetch the list of users from the API endpoint
-    const response = await fetch('http://localhost:3000/users');
-    const users = await response.json();
-    // find the user with the matching email and password
-    const user = users.find((user) => user.email === email && user.password === password);
-
-    if (!user) {
-      // if the user is not found, show an error message
-      alert('Invalid email or password');
-      // loginForm.innerHTML = 'Login';
-      window.location.href = '/my-brand/login.html';
-      return;
-    }
-
-    // if the user is found, store their information in local storage
-    localStorage.setItem('currentUser', JSON.stringify(user));
-
-       // redirect the user to the dashboard page
-       window.location.href = "/my-brand/dashboard/dashboard.html";
-      } catch (error) {
-        console.error(error);
-        alert('An error occurred during login');
-        window.location.href = '/my-brand/login.html';
-      }
-    });
+loginForm.addEventListener('submit', login); 
