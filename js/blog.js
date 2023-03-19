@@ -14,6 +14,7 @@ const addBlog = async (event) => {
     },
   });
   alert("blog added successful");
+  window.location.href='./dash_blog.html';
 };
 
 form.addEventListener("submit", addBlog);
