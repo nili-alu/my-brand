@@ -21,7 +21,7 @@ let errMessage="";
      }
      alert("Saccessfully logged!!")
      window.location.href = '/my-brand/dashboard/dash_blog.html';
-     // Redirect the user to the protected page on the frontend
+
    
   })
   .catch(error => {
