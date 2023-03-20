@@ -20,8 +20,8 @@ let errMessage="";
         window.location.href = './login.html';
      }
      alert("Saccessfully logged!!")
-     window.location.href = './dashboard/dash_blog.html';
-     // Redirect the user to the protected page on the frontend
+     window.location.href = "./dashboard/dash_blog.html";
+
    
   })
   .catch(error => {
