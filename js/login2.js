@@ -20,7 +20,7 @@ let errMessage="";
         window.location.href = './login.html';
      }
      alert("Saccessfully logged!!")
-     window.location.href = '/my-brand/dashboard/dash_blog.html';
+     window.location.href = "./dashboard/dash_blog.html";
 
    
   })
