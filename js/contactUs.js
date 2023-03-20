@@ -18,6 +18,7 @@ const Contact = async (event) => {
     },
   });
   alert("thank you for reaching out \n we will back to you soon")
+  location.reload();
   // Toastify({
   //   text: "This is a toast",
   //   duration: 3000,
