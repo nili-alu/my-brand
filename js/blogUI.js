@@ -1,5 +1,5 @@
-let blogId = "";
-const fetchData = async () => {
+
+const getBlog = async () => {
   const res = await fetch(
     "https://mybrand-backend-production-309f.up.railway.app/api/blogs"
   );
@@ -22,6 +22,7 @@ const fetchData = async () => {
   });
 
   blogAdd.innerHTML = template;
+  
 };
 
-window.addEventListener("DOMContentLoaded", fetchData);
+window.addEventListener("DOMContentLoaded", getBlog);

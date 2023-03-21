@@ -11,10 +11,11 @@ const fetchData = async () => {
   
     postData.forEach((element) => {   
       // blogId.forin((id) => {
-
+        
       template += `
+      
         <div id="commentspace">
-      <h6 id="email">User email: ${element.email}</h6>
+      <h6 id="email">Name: ${element.email}</h6>
       <p id="message">${element.message}</p>
         </div>
           `;

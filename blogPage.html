@@ -8,7 +8,8 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="./style/blog.css">
     <link rel="stylesheet" href="/my-brand/dashboard/dash_style/add_blog.css">
-    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <title>Blog</title>
 </head>
 
@@ -17,16 +18,21 @@
     <header class="nav-bar">
         <div class="topnav" id="myTopnav">
 
-            <a href="./index.html"> <svg width="70" height="45" viewBox="0 0 70 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_3_123)">
-                <path d="M24.137 22.9189V10.3814H26.7805V22.1284L25.5905 20.7684H31.447V22.9189H24.137ZM35.6773 22.9189H33.1018V10.3814H37.1988L41.3978 21.9669L40.9558 22.0774V10.3814H43.5228V22.9189H39.4003L35.2013 11.3674L35.6773 11.2569V22.9189Z" fill="white"/>
-                <path d="M16.3503 11.1293L33.7851 0.080801L51.22 11.1293L44.7091 28.6071H22.8611L16.3503 11.1293Z" stroke="#EF6D58" stroke-width="5"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_3_123">
-                <rect width="70" height="45" fill="white"/>
-                </clipPath>
-                </defs>
+            <a href="./index.html"> <svg width="70" height="45" viewBox="0 0 70 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_3_123)">
+                        <path
+                            d="M24.137 22.9189V10.3814H26.7805V22.1284L25.5905 20.7684H31.447V22.9189H24.137ZM35.6773 22.9189H33.1018V10.3814H37.1988L41.3978 21.9669L40.9558 22.0774V10.3814H43.5228V22.9189H39.4003L35.2013 11.3674L35.6773 11.2569V22.9189Z"
+                            fill="white" />
+                        <path
+                            d="M16.3503 11.1293L33.7851 0.080801L51.22 11.1293L44.7091 28.6071H22.8611L16.3503 11.1293Z"
+                            stroke="#EF6D58" stroke-width="5" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3_123">
+                            <rect width="70" height="45" fill="white" />
+                        </clipPath>
+                    </defs>
                 </svg>
             </a>
             <a href="./index.html">Home</a>
@@ -63,10 +69,10 @@
 
         <div class="main_container">
 
-            <article  class="main_article">
+            <article class="main_article">
                 <div id="mainBlog" class="main_image">
                     <!-- <p>Stories</p> -->
-                 
+
                 </div>
                 <div class="comments">
                     <div id="commentForm" class="container1">
@@ -76,11 +82,11 @@
                             <div class="container2">
 
                                 <label for="uname"><b>Your email</b></label>
-                                <input type="text" id="email" placeholder="Enter your email" name="uname" required>
+                                <input type="text" id="email" placeholder="Enter your name" name="uname" required>
 
                                 <label for="uname"><b>Your comment message</b></label>
-                                <textarea name="uname" placeholder="your comment message here" id="description"
-                                    cols="50" rows="10"></textarea>
+                                <textarea name="uname" placeholder="your comment message here" id="message" cols="50"
+                                    rows="10"></textarea>
 
                                 <button class="comment-button" type="submit">Comment</button>
                             </div>
@@ -92,16 +98,20 @@
                 </div><br>
 
             </article>
+            <div>
+                <h3 style="margin-left: 50px">Comments</h3>
 
+                <div id="blogComments">
+
+                    <!-- to be rendered from javascript -->
+                </div>
+            </div>
 
         </div>
-        <div id="blogComments">
-            <!-- to be rendered from javascript --> 
 
-        </div>
 
-<!-- Subcribe -->
-<!-- 
+        <!-- Subcribe -->
+        <!-- 
         <div class="low_part">
             <section class="newsletter">
                 <h4>Newsletter</h4>
@@ -116,22 +126,25 @@
         </div>
 
     </div> -->
-    
-    <script src="./js/blogUI.js"></script>
-     <script src="./js/commentUI.js"></script>
-    <script>
-        function openForm() {
-            document.getElementById("commentForm").style.display = "block";
-        }
 
-        function closeForm() {
-            document.getElementById("commentForm").style.display = "none";
+        <script src="./js/commentUI.js"></script>
+        <script src="./js/blogUI.js"></script>
 
-        }
-    </script>
-    
-    <script src="/my-brand/js/comment_likes.js"></script>
-    <script src="/my-brand/js/subscribers.js"></script>
+        <script>
+            function openForm() {
+                document.getElementById("commentForm").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("commentForm").style.display = "none";
+
+            }
+        </script>
+
+        <script src="/my-brand/js/postComment.js"></script>
+        <!-- <script src="/my-brand/js/subscribers.js"></script> -->
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 </body>
 

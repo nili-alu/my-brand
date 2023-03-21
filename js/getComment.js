@@ -1,5 +1,5 @@
 
-const fetchData = async () => {
+const getComm = async () => {
     const res = await fetch("https://mybrand-backend-production-309f.up.railway.app/api/comments");
     const response = await fetch("https://mybrand-backend-production-309f.up.railway.app/api/blogs");
   
@@ -15,13 +15,11 @@ const fetchData = async () => {
 
       template += `
     <tr>
-      <td>${element._id}</td>
-      <td>${element.email}</td>
-      <td>${element.message}</td>
-      <td>20</td>
-      <td>
-          
-          <button onClick="deleteComment(${element.id})" id="delete"><i class='fa fa-trash'></i>Delete</button>
+      <td id="tableId">${element._id}</td>
+      <td id="tableEmail">${element.email}</td>
+      <td id="tableMessage">${element.message}</td>
+      <td>          
+          <button onClick="deleteComment('${element._id}')" id="delete"><i class='fa fa-trash'></i>Delete</button>
        </td>
     </tr>     
           `;
@@ -31,12 +29,21 @@ const fetchData = async () => {
     comment.innerHTML =template;
   };
   
-  window.addEventListener('DOMContentLoaded', fetchData);
+  window.addEventListener('DOMContentLoaded', getComm);
   
   const deleteComment = async (comment_id) => {
       await fetch(`https://mybrand-backend-production-309f.up.railway.app/api/comments/delete/${comment_id}`, {
           method: "DELETE",
   
+      })
+      .then((response) => response.json())
+      .then((data) => {
+          // functionalities of delete
+          location.reload();
+    
+      })
+      .catch((err) => {
+          alert(err)
       });
   }
   

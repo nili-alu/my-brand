@@ -92,11 +92,15 @@ border-radius: 6px;
     color: #391400;
 }
 
+#blogComments{
+    margin-left: 50px;
+    
+}
 #commentspace{
    
     padding: 20px;
     background-color: white;
-    width: 30%;
+    width: 100%;
     margin-top: 5px;
 
 }

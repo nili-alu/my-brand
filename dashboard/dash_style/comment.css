@@ -119,6 +119,7 @@ table {
     
   }
   th{
+    width: 25%;
     background: #28293E;
     color: white;
   }
@@ -149,3 +150,11 @@ table {
   #tableValue{
     margin-top: 0px;
   }
+  
+  #tableId,
+  #tableEmail,
+  #tableMessage,
+  #tableDelete{
+    width: 25%;
+  }
+  
