@@ -1,5 +1,5 @@
 
-const getQuerries = async () => {
+const fetchData = async () => {
     const res = await fetch("https://mybrand-backend-production-309f.up.railway.app/api/messages");
     const postData = await res.json();
   
@@ -26,18 +26,24 @@ const getQuerries = async () => {
     comment.innerHTML =template;
   };
   
-  
+  window.addEventListener('DOMContentLoaded', fetchData);
+    
 
 const deleteMessage = async (message_id) => {
-  fetch(
+  const response = await fetch(
     `https://mybrand-backend-production-309f.up.railway.app/api/messages/delete/${message_id}`,
   {
       method: "DELETE"
-  });
-      getQuerries();
+  })
+  .then((response) => response.json())
+  .then((data) => {
+      // functionalities of delete
       location.reload();
 
-  };
-  window.addEventListener('DOMContentLoaded', () => getQuerries());
-    
+  })
+  .catch((err) => {
+      alert(err)
+  });
+
+}
 

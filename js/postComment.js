@@ -1,4 +1,4 @@
-const CommentForm = document.querySelector("#form");
+const CommentForm = document.querySelector("#formCom");
 const comment = async (event) => {
   event.preventDefault();
   const comm = {

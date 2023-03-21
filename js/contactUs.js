@@ -32,8 +32,9 @@ const Contact = async (event) => {
   //   },
   //   onClick: function(){} // Callback after click
   // }).showToast();
+ 
+  window.location.href="/my-brand/index.html"
   alert("thank you for reaching out \n we will back to you soon")
-  location.reload();
 };
 
 ContactUS.addEventListener("submit", Contact);
