@@ -1,16 +1,14 @@
 
-const fetchData = async () => {
+const getQuerries = async () => {
     const res = await fetch("https://mybrand-backend-production-309f.up.railway.app/api/messages");
     const postData = await res.json();
-    // const blogId = await response.json();
   
     const comment = document.querySelector("#tableValue");
   
     let template = "";
   
     postData.forEach((element) => {   
-      // blogId.forin((id) => {
-
+  
       template += `
       <tr>
       <td id="tableId">${element._id}</td>
@@ -28,24 +26,18 @@ const fetchData = async () => {
     comment.innerHTML =template;
   };
   
-  window.addEventListener('DOMContentLoaded', fetchData);
-    
+  
 
-function deleteMessage(message_id)  {
-
-  fetch(`https://mybrand-backend-production-309f.up.railway.app/api/messages/delete/${message_id}`,
+const deleteMessage = async (message_id) => {
+  fetch(
+    `https://mybrand-backend-production-309f.up.railway.app/api/messages/delete/${message_id}`,
   {
       method: "DELETE"
-  })
-  .then((response) => response.json())
-  .then((data) => {
-      // functionalities of delete
+  });
+      getQuerries();
       location.reload();
 
-  })
-  .catch((err) => {
-      alert(err)
-  });
-
-}
+  };
+  window.addEventListener('DOMContentLoaded', () => getQuerries());
+    
 

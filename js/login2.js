@@ -19,7 +19,7 @@ let errMessage="";
         
         window.location.href = './login.html';
      }
-     alert("Saccessfully logged!!")
+     alert("Successfully logged!!")
      window.location.href = "./dashboard/dash_blog.html";
 
    
