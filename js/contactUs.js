@@ -33,7 +33,7 @@ const Contact = async (event) => {
   //   onClick: function(){} // Callback after click
   // }).showToast();
  
-  window.location.href="/my-brand/index.html"
+  location.reload();
   alert("thank you for reaching out \n we will back to you soon")
 };
 
