@@ -13,7 +13,7 @@ const comment = async (event) => {
     },
   });
   alert("thank you for commenting, <br> your comment will help us to improve");
-  window.location.href='/my-brand/blogPage.html';
+  window.location.href='./blogPage.html';
 };
 
 CommentForm.addEventListener("submit", comment);
