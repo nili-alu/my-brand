@@ -23,6 +23,12 @@ const fetchData = async () => {
     });
   
     comment.innerHTML =template;
+    Toastify({
+      text: "Your comment has been added successfully",
+      backgroundColor: "green",
+      className: "toastify-success",
+    }).showToast();
+    
   };
   
   window.addEventListener('DOMContentLoaded', fetchData);

@@ -18,5 +18,6 @@
   "homepage": "https://github.com/nili-alu/my-brand#readme",
   "dependencies": {
     "toastify-js": "^1.12.0"
-  }
+  },
+  "devDependencies": {}
 }

@@ -19,13 +19,26 @@ let errMessage="";
         
         window.location.href = './login.html';
      }
-     alert("Successfully logged!!")
+   //   alert("Successfully logged!!")
+   // Toastify({
+   //    text: "Sorry your comment is not sent!!",
+   //    duration: 3000,
+   //    newWindow: true,
+   //    close: true,
+   //    gravity: "top", 
+   //    position: "center",
+   //    stopOnFocus: true,
+   //    style: {
+   //      background:"#96c93d",
+   //    },
+   //    onClick: function(){} 
+   //  }).showToast();
      window.location.href = "./dashboard/dash_blog.html";
 
    
   })
   .catch(error => {
-    alert(error.response.data.message);
+    toastr.error(error.response.data.message);
   });
 }
 

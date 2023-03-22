@@ -13,8 +13,22 @@ const addBlog = async (event) => {
       "Content-Type": "application/json",
     },
   });
-  alert("blog added successful");
+ 
+  Toastify({
+    text: "blog submitted successful",
+    duration: 3000,
+    newWindow: true,
+    close: true,
+    gravity: "top", 
+    position: "right",
+    stopOnFocus: true,
+    style: {
+      background:"#96c93d",
+    },
+    onClick: function(){} 
+  }).showToast();
+  
   window.location.href='./dash_blog.html';
-};
 
+};
 form.addEventListener("submit", addBlog);

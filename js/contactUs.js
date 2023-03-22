@@ -1,5 +1,3 @@
-// import Toastify from 'toastify-js'
-// import "toastify-js/src/toastify.css"
 
 const ContactUS = document.querySelector("#form");
 const Contact = async (event) => {
@@ -18,23 +16,17 @@ const Contact = async (event) => {
       "Content-Type": "application/json",
     },
   });
-  // Toastify({
-  //   text: "thank you for reaching out \n we will back to you soon",
-  //   duration: 3000,
-  //   destination: "https://github.com/apvarun/toastify-js",
-  //   newWindow: true,
-  //   close: true,
-  //   gravity: "top", // `top` or `bottom`
-  //   position: "left", // `left`, `center` or `right`
-  //   stopOnFocus: true, // Prevents dismissing of toast on hover
-  //   style: {
-  //     background: "linear-gradient(to right, #00b09b, #96c93d)",
-  //   },
-  //   onClick: function(){} // Callback after click
-  // }).showToast();
- 
+  Toastify({
+    text: "thank you for reaching out \n we will back to you soon",
+    backgroundColor: "green",
+    className: "toastify-success",
+    gravity: "top", 
+    position:"right",
+    duration: 5000,
+  }).showToast(
+    window.location.href='../index.html'
+  );
   location.reload();
-  alert("thank you for reaching out \n we will back to you soon")
 };
 
 ContactUS.addEventListener("submit", Contact);

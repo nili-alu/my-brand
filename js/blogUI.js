@@ -23,6 +23,7 @@ const getBlog = async () => {
 
   blogAdd.innerHTML = template;
   
+  
 };
 
 window.addEventListener("DOMContentLoaded", getBlog);

@@ -12,7 +12,7 @@ const comment = async (event) => {
       "Content-Type": "application/json",
     },
   });
-  alert("thank you for commenting, <br> your comment will help us to improve");
+  
   window.location.href='./blogPage.html';
 };
 
