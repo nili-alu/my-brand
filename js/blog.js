@@ -6,7 +6,7 @@ const addBlog = async (event) => {
     description: form.description.value,
     image: form.myFile.value,
   }
-  await fetch('https://mybrand-backend-production-309f.up.railway.app/api/blogs/create', {
+  await fetch('https://mybrand-backend-production-1869.up.railway.app/api/blogs/create', {
     method: "POST",
     body: JSON.stringify(doc),
     headers: {

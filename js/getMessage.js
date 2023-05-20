@@ -1,6 +1,6 @@
 
 const fetchData = async () => {
-    const res = await fetch("https://mybrand-backend-production-309f.up.railway.app/api/messages");
+    const res = await fetch("https://mybrand-backend-production-1869.up.railway.app/api/messages");
     const postData = await res.json();
   
     const comment = document.querySelector("#tableValue");

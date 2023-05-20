@@ -5,7 +5,7 @@ const subs = async (event) => {
     email: subscriber.email.value,
    
   };
-  await fetch(" http://localhost:3000/subs", {
+  await fetch("https://mybrand-backend-production-1869.up.railway.app/api/subs", {
     method: "POST",
     body: JSON.stringify(doc),
     headers: {

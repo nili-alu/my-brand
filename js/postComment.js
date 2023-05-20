@@ -5,7 +5,7 @@ const comment = async (event) => {
     email: CommentForm.email.value,
     message: CommentForm.message.value,
   }
-  await fetch('https://mybrand-backend-production-309f.up.railway.app/api/comments/create', {
+  await fetch('https://mybrand-backend-production-1869.up.railway.app/api/comments/create', {
     method: "POST",
     body: JSON.stringify(comm),
     headers: {

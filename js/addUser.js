@@ -1,6 +1,6 @@
  
 let emailExists = async (email)=>{
-    let uri = 'https://mybrand-backend-production-309f.up.railway.app/api/users?email='
+    let uri = 'https://mybrand-backend-production-1869.up.railway.app/api/users?email='
     uri += `${email}`
     const res = await fetch(uri)
     const user = await res.json();
@@ -31,7 +31,7 @@ const createUser = async (e) => {
                 password: form.password.value,
                 
             }
-            await fetch('https://mybrand-backend-production-309f.up.railway.app/api/users/create', {
+            await fetch('https://mybrand-backend-production-1869.up.railway.app/api/users/create', {
                 method: 'POST',
                 body: JSON.stringify(doc),
                 headers: { 'Content-Type': 'application/json' }

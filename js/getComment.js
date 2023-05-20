@@ -1,7 +1,7 @@
 
 const getComm = async () => {
-    const res = await fetch("https://mybrand-backend-production-309f.up.railway.app/api/comments");
-    const response = await fetch("https://mybrand-backend-production-309f.up.railway.app/api/blogs");
+    const res = await fetch("https://mybrand-backend-production-1869.up.railway.app/api/comments");
+    const response = await fetch("https://mybrand-backend-production-1869.up.railway.app/api/blogs");
   
     const postData = await res.json();
     // const blogId = await response.json();
@@ -32,7 +32,7 @@ const getComm = async () => {
   window.addEventListener('DOMContentLoaded', getComm);
   
   const deleteComment = async (comment_id) => {
-      await fetch(`https://mybrand-backend-production-309f.up.railway.app/api/comments/delete/${comment_id}`, {
+      await fetch(`https://mybrand-backend-production-1869.up.railway.app/api/comments/delete/${comment_id}`, {
           method: "DELETE",
   
       })

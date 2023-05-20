@@ -1,6 +1,6 @@
 const fetchData = async () => {
   const res = await fetch(
-    "https://mybrand-backend-production-309f.up.railway.app/api/blogs"
+    "https://mybrand-backend-production-1869.up.railway.app/api/blogs"
   );
 
   const postData = await res.json();

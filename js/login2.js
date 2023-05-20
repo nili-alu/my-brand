@@ -11,7 +11,7 @@ let errMessage="";
   const password = document.querySelector("#password").value;
 
   
-  axios.post('https://mybrand-backend-production-309f.up.railway.app/api/login/create', { email, password })
+  axios.post('https://mybrand-backend-production-1869.up.railway.app/api/login/create', { email, password })
   .then(response => {
      // Store the token in a browser cookie or local storage for future requests
      document.cookie = `token=${response.data.token}; HttpOnly`;

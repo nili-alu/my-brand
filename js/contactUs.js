@@ -9,7 +9,7 @@ const Contact = async (event) => {
     
   };
  
-  await fetch("https://mybrand-backend-production-309f.up.railway.app/api/messages/create", {
+  await fetch("https://mybrand-backend-production-1869.up.railway.app/api/messages/create", {
     method: "POST",
     body: JSON.stringify(Con),
     headers: {
